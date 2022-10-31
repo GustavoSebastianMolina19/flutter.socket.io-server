@@ -23,6 +23,13 @@
         socket.on('mensaje', function(payload) {
             console.log('Escuchando', payload);
         });
+        socket.on('nuevo-mensaje', function(payload) {
+            console.log('m3nwqj3', payload);
+        });
+        socket.on('Active-bands', function(payload) {
+            console.clear();
+            console.table( payload);
+        });
 
     </script>
 </body>
